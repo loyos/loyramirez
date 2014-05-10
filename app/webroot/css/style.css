@@ -1,0 +1,217 @@
+
+* {
+	margin:0;
+	padding:0;
+}
+
+body{
+	font-family: 'Open Sans Condensed', sans-serif;
+	overflow-x: hidden;
+}
+
+#content{
+
+}
+
+.menu{
+	text-transform: uppercase;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 20px;
+	font-weight: lighter;
+	float: right;
+	margin-right: 18%;
+	overflow: hidden;
+	clear: right;
+}
+
+.menu ul{
+
+}
+
+.menu li{
+	float: left;
+	list-style: none;
+	height: 80px;
+	line-height: 80px;
+	transition: 1s all ease;
+	padding-left: 15px;
+	padding-right: 15px;
+	cursor: pointer;
+	color: black;
+}
+
+.menu li:hover{
+	background-color: #72b842;
+	transition: 1s all ease;
+	color: white;
+}
+
+.menu li:hover a{
+	transition: 1s all ease;
+	color: white;
+}
+
+.menu li a{
+	text-decoration: none;
+	color: #939393;
+}
+
+.logo{
+	background-color: #72b842;
+	color: white;
+	text-transform: uppercase;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 30px;
+	height: 70px;
+	width: 140px;
+	float: left;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	margin-left: 20%;
+	font-weight: bold;
+}
+
+.logo span{
+	font-size: 15px;
+	color: white;
+	font-weight: lighter;
+	line-height: 0px;
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+	top: -20px;
+}
+
+#header{
+	height: 80px;
+	width: 100%;
+	position: fixed;
+	z-index: 10;
+	background-color: white;
+}
+
+#home { 
+  background: url(../img/back.jpg) 0 0px no-repeat; 
+  background-size: cover;
+  height: 700px; 
+  margin: 0 auto; 
+  width: 100%; 
+  max-width: 1920px; 
+  position: relative;
+}
+
+#home_content{
+	height: 180px;
+	width: 100%;
+	background-color: #e9e9e9;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#home_content .square_content{
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 780px;
+}
+
+#home_content .square{
+	margin-left: 0;
+	height: 90px;
+	width: 90px;
+	background-color: #72b842;
+	border-radius: 10px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#home_content .big_square{
+	border-radius: 10px;
+	background-color: white;
+	padding: 20px;
+	width: 200px;
+	float: left;
+	height: 140px;
+	margin-left: 20px;
+	text-align: center;
+	color: #939393;
+	font-size: 20px;
+	line-height: 20px;
+}
+
+.out{
+	left: 100%;
+	transition: 1s all ease;
+}
+
+.in{
+	left: 70%;
+	transition: 1s all ease;
+}
+
+#about_me{
+	width: 100%;
+	/*background: url(../img/about_me_back.jpg); */
+	/*background-color: #2F3032;*/
+	background-color: #fff;
+	background-position: 20px;
+	height: 400px;
+}
+
+#about_me .profile{
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 500px;
+	font-size: 40px;
+	margin-top: 0px;
+	padding-top: 30px;
+	text-align: center;
+	overflow: hidden;
+}
+
+.batman{
+	margin-top: -100px;
+	margin-left: 100px;
+	background: url(../img/batman_dialogue.png) no-repeat;
+	background-size: 100%;
+	height: 400px;
+	width: 400px;
+	z-index: 0;
+	float: right;
+	position: absolute;
+	transition: 1s all ease;
+	overflow: hidden;
+}
+
+.profile span{
+	font-size: 30px;
+}
+
+#about_me .profile .img{
+	margin-top: 30px;
+	width: 200px;
+	border-radius: 300px;
+	background: url(../img/loy.png);
+	height: 200px;
+	background-position: 45% 64%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 200px;
+}
+ 
+#about { 
+  background: url(../img/back1.jpg) 50% 0 repeat fixed; min-height: 1000px; 
+  background-size: 100%;
+  opacity: 0.6;
+  height: 1000px; 
+  margin: 0 auto; 
+  width: 100%; 
+  max-width: 1920px; 
+  position: relative; 
+  /*-webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
+   box-shadow: 0 0 50px rgba(0,0,0,0.8); */
+}
+ 
