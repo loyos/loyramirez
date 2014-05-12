@@ -92,13 +92,12 @@ body{
 }
 
 #home { 
-  background: url(../img/back.jpg) 0 0px no-repeat; 
+  background: url(../img/back.jpg) 0 0 fixed no-repeat;
   background-size: cover;
   height: 700px; 
-  margin: 0 auto; 
+  margin: 0 auto;
   width: 100%; 
-  max-width: 1920px; 
-  position: relative;
+  max-width: 1920px;
 }
 
 #home_content{
@@ -203,15 +202,22 @@ body{
 }
  
 #about { 
-  background: url(../img/back1.jpg) 50% 0 repeat fixed; min-height: 1000px; 
-  background-size: 100%;
-  opacity: 0.6;
-  height: 1000px; 
+  background: url(../img/back1.jpg) 0 0 fixed no-repeat;
+  opacity: 1;
+  height: 1000px;
   margin: 0 auto; 
   width: 100%; 
   max-width: 1920px; 
-  position: relative; 
+  
   /*-webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
    box-shadow: 0 0 50px rgba(0,0,0,0.8); */
 }
- 
+
+.back{
+	background: url(../img/gibson.png) 0 0  no-repeat;
+	height: 380px;
+	position: relative;
+	top: 0px;
+	z-index: 5;
+	width: 100%;
+} 

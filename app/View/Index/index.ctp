@@ -1,4 +1,4 @@
-<section id="home" data-type="background" data-speed="10" class="pages">     
+<section id="home" data-type="background" data-speed="2" class="pages">     
          
 </section>
 
@@ -29,7 +29,7 @@
 </section>
 
 <section id = "about_me">
-	<div class = 'batman' data-type ='figures' data-speed="4">
+	<div class = 'batman out' data-type ='figures' data-speed="4">
 	</div>
 	<div class = 'profile'>
 		Loy Ramírez <br>
@@ -43,12 +43,13 @@
 </section>
      
 <section id="about" data-type="background" data-speed="4" class="pages">
-         
+	<div class = "back" data-speed="5">
+	</div>
 </section>
 
 
 <script>
-$(document).ready(function(){  // parallax function
+$(document).ready(function(){  // parallax function moving background of the sections
     $('section[data-type="background"]').each(function(){
         var $bgobj = $(this); // assigning the object
 		
@@ -64,9 +65,20 @@ $(document).ready(function(){  // parallax function
             $bgobj.css({ backgroundPosition: coords });
         }); 
     });
-
 	
-	var $window = $(window);
+	
+	$('.back').each(function(){   // moving the second background parallax
+		 var $bgobj = $(this); // assigning the object
+		var $window = $(window);
+        $(window).scroll(function() {
+            var yPos = -($window.scrollTop() / $bgobj.data('speed'));
+			var wachu = yPos + 'px';
+			var actual = $('.back').css('top', wachu);
+        }); 
+    });
+	
+	
+	var $window = $(window);  // showing and hiding batman!
 	  $(window).scroll(function() {
 			// console.debug($window.scrollTop());
 			if($window.scrollTop() < 425){
