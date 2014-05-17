@@ -1,19 +1,19 @@
 <div class = "menu">
 	<ul>
-		<li>
-			<?php echo $this->Html->link('Home', '#about_me'); ?>
+		<li data-div="home">
+			<?php echo $this->Html->link('Home', '#about_me', array('data-div' => 'home')); ?>
 		</li>
-		<li>
-			<?php echo $this->Html->link('About', '#'); ?>
+		<li data-div= "home_content">
+			<?php echo $this->Html->link('About', '#', array('data-div' => 'home_content')); ?>
 		</li>
-		<li>
-			<?php echo $this->Html->link('Portfolio', '#'); ?>
+		<li data-div= "about">
+			<?php echo $this->Html->link('Portfolio', '#', array('data-div' => 'about')); ?>
 		</li>
-		<li>
-			<?php echo $this->Html->link('Blog', '#'); ?>
+		<li data-div= "others">
+			<?php echo $this->Html->link('Services', '#', array('data-div' => 'others')); ?>
 		</li>
-		<li>
-			<?php echo $this->Html->link('Contact', '#'); ?>
+		<li data-div= "separator">
+			<?php echo $this->Html->link('Contact', '#', array('data-div' => 'separator')); ?>
 		</li>
 	</ul>
 </div>

@@ -91,13 +91,36 @@ body{
 	background-color: white;
 }
 
-#home { 
-  background: url(../img/back.jpg) 0 0 fixed no-repeat;
+#home {
+  /*background: url(../img/back_dev.jpg) 0 0 fixed no-repeat; */
+    background: url(../img/texture1.jpg) 0 0 fixed repeat;
   background-size: cover;
   height: 700px; 
   margin: 0 auto;
   width: 100%; 
   max-width: 1920px;
+  position: relative;
+  z-index: 1;
+}
+
+#home .quotes{
+	width: 600px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	top: 120px;
+	
+}
+
+#home ul {
+	color: white;
+	margin-top: 100px;
+	float: left;
+}
+
+#home li p {
+	font-size: 70px;
 }
 
 #home_content{
@@ -106,6 +129,8 @@ body{
 	background-color: #e9e9e9;
 	padding-top: 50px;
 	padding-bottom: 50px;
+	position: relative;
+	z-index: 1;
 }
 
 #home_content .square_content{
@@ -157,6 +182,10 @@ body{
 	background-color: #fff;
 	background-position: 20px;
 	height: 400px;
+	position: relative;
+	z-index: 5;
+	box-shadow: 0px 4px 5px #888888;
+	color: #888;
 }
 
 #about_me .profile{
@@ -202,9 +231,10 @@ body{
 }
  
 #about { 
-  background: url(../img/back1.jpg) 0 0 fixed no-repeat;
+  /*background: url(../img/background_texture.jpg) 0 0 fixed repeat;*/
+  background: url(../img/texture1.jpg) 0 0 fixed repeat;
   opacity: 1;
-  height: 1000px;
+  height: 800px;
   margin: 0 auto; 
   width: 100%; 
   max-width: 1920px; 
@@ -213,11 +243,135 @@ body{
    box-shadow: 0 0 50px rgba(0,0,0,0.8); */
 }
 
-.back{
-	background: url(../img/gibson.png) 0 0  no-repeat;
-	height: 380px;
+#about .portfolio h2{
+	color: white;
+	font-size: 50px;
+	width: 200px;
 	position: relative;
-	top: 0px;
-	z-index: 5;
+	margin-left: auto;
+	margin-right: auto;
+	top: -110px;
+}
+
+.portfolio{
+	/* background: url(../img/gibson.png) 0 0  no-repeat; */
+	background-color: #E9E9E9;
+	height: 340px;
+	position: relative;
+	top: -600px;
+	z-index: 0;
+	width: 770px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+}
+
+.portfolio img{
+	width: 240px;
+}
+
+.portfolio table{
+	padding: 5px;
+	margin: 0px;
+	position: relative;
+	top: -30px;
+}
+
+.portfolio td{
+	padding: 5px;
+	margin: 0px;
+}
+
+#others {
 	width: 100%;
-} 
+	background-color: white;
+	height: 600px;
+	z-index: 1;
+	position: relative;
+	box-shadow: 0px 0px 5px #fff;
+	border-top: 1px solid white;
+	text-align: center;
+}
+
+#others h2{
+	color: #777;
+	margin-top: 40px;
+	font-size: 30px;
+}
+
+#separator {
+	width: 100%;
+	/*background: url(../img/background_texture.jpg) 0 0 repeat;*/
+	background: url(../img/texture1.jpg) 0 0 fixed repeat;
+	background-size: cover;
+	height: 800px;
+	z-index: 0;
+	position: relative;
+}
+
+.services {
+	width: auto;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	height: 300px;
+	border: 0px solid grey;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.service{
+	border: 0px solid grey;
+	width: 378px;
+	float: left;
+	height: 400px;
+	padding: 10px;
+	color:#888;
+	font-size: 18px;
+}
+
+.service .title{
+	height: auto;
+	font-size: 30px;
+	color:#888;
+	position: relative;
+	top: -20px;
+}
+
+.service .description{
+}
+
+#contact {
+	width: 100%;
+	background-color: #E9E9E9;
+	height: 500px;
+	z-index: 1;
+	position: relative;
+	box-shadow: 0px -2px 5px #888888;
+}
+
+/* Basic Jquery slider css */
+
+
+ul.bjqs-controls.v-centered li.bjqs-next a{
+	background: url(../img/next.png) -2px 0;
+	width: 33px;
+	height: 50px;
+}
+
+ul.bjqs-controls.v-centered li.bjqs-next a:hover{
+	background: url(../img/next.png) -2px 50px;
+	width: 33px;
+	height: 50px;
+}
+
+ul.bjqs-controls.v-centered li.bjqs-prev a{
+	background: url(../img/prev.png) 0 0;
+	width: 33px;
+	height: 50px;
+}
+
+ul.bjqs-controls.v-centered li.bjqs-prev a:hover{
+	background: url(../img/prev.png) 0 50px;
+}

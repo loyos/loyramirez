@@ -32,7 +32,10 @@ $cakeDescription = __d('cake_dev', 'Loy Ramirez');
 	<?php
 		echo $this->Html->meta('icon');
 		echo $this->Html->css('style');
+		echo $this->Html->css('bjqs');
+		// echo $this->Html->css('demo');
 		echo $this->Html->script('jquery-1.11.1.min');
+		echo $this->Html->script('bjqs-1.3');
 		// echo $this->Html->script('jquery.mousewheel');
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
@@ -65,6 +68,9 @@ $cakeDescription = __d('cake_dev', 'Loy Ramirez');
 </html>
 
 <script>
+
+	
+	
 	$(function(){	
 
 		var $window = $(window);
