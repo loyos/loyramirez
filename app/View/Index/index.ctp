@@ -194,7 +194,9 @@
 </section>
 
 <section id="separator" data-type="background" data-speed="4" class="pages">
- 
+	<div class = "contact" data-speed="4">
+		<h2> CONTACT</h2>
+	</div>
 </section>
 
 <!-- <section id="contact" data-type="background" data-speed="2" class="pages">     
@@ -261,6 +263,20 @@ $(document).ready(function(){
         }); 
     });
 	
+	$('.contact').each(function(){   // moving the second background parallax
+		var $bgobj = $(this); // assigning the object
+		var $window = $(window);
+		var inicial = $('.contact').css('top');
+		inicial = parseInt(inicial.replace('px',''));
+		console.debug('inicial = ' + inicial);
+        $(window).scroll(function() {
+            var yPos = ($window.scrollTop() / $bgobj.data('speed'));
+			var wachu = (yPos + inicial) + 'px';
+			var actual = $('.contact').css('top', wachu);
+			// console.debug(wachu);
+        }); 
+    });
+	
 	
 	var $window = $(window);  // showing and hiding batman!
 	  $(window).scroll(function() {
@@ -295,6 +311,7 @@ $(document).ready(function(){
 				showcontrols : true, // show next and prev controls
 				centercontrols : true, // center controls verically
 				showmarkers : false,
+				automatic : false
 			});
 		});
 

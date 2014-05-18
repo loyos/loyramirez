@@ -256,18 +256,18 @@ body{
 .portfolio{
 	/* background: url(../img/gibson.png) 0 0  no-repeat; */
 	background-color: #E9E9E9;
-	height: 340px;
+	height: 400px;
 	position: relative;
 	top: -600px;
 	z-index: 0;
-	width: 770px;
+	width: 900px;
 	margin-left: auto;
 	margin-right: auto;
 	padding: 10px;
 }
 
 .portfolio img{
-	width: 240px;
+	width: 280px;
 }
 
 .portfolio table{
@@ -342,13 +342,26 @@ body{
 .service .description{
 }
 
-#contact {
-	width: 100%;
+.contact {
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	top: -450px;
 	background-color: #E9E9E9;
 	height: 500px;
 	z-index: 1;
 	position: relative;
 	box-shadow: 0px -2px 5px #888888;
+}
+
+.contact h2{
+		color: white;
+	font-size: 50px;
+	width: 200px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	top: -110px;
 }
 
 /* Basic Jquery slider css */
