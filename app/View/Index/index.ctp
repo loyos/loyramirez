@@ -321,6 +321,8 @@ $(document).ready(function(){  // hover with jquery
 			$('#menu_contact a').css('color', 'white');
 		}
 	});
+	
+	// animating scroll position till reach its corresponding div
 	$( ".menu a, .menu li" ).click(function( event ) {
 		event.preventDefault();
 		// alert($(this).data('div'));
