@@ -22,6 +22,7 @@ body{
 	margin-right: 18%;
 	overflow: hidden;
 	clear: right;
+	transition: 1s all ease;
 }
 
 .menu ul{
@@ -54,6 +55,12 @@ body{
 .menu li a{
 	text-decoration: none;
 	color: #939393;
+}
+
+.selected{
+	background-color: #72b842;
+	transition: 1s all ease;
+	color: white;
 }
 
 .logo{
@@ -192,7 +199,7 @@ body{
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
-	width: 500px;
+	width: 700px;
 	font-size: 40px;
 	margin-top: 0px;
 	padding-top: 30px;
@@ -214,20 +221,26 @@ body{
 	overflow: hidden;
 }
 
-.profile span{
-	font-size: 30px;
+.profile .description{
+	font-size: 20px;
+	float: right;
+	width: 400px;
+	float: left;
+	margin-left: 70px;
+	margin-top: 40px;
 }
 
 #about_me .profile .img{
 	margin-top: 30px;
 	width: 200px;
-	border-radius: 300px;
-	background: url(../img/loy.png);
+	border-radius: 0px;
+	background: url(../img/loy.jpg);
+	background-size: cover;
 	height: 200px;
 	background-position: 45% 64%;
-	margin-left: auto;
-	margin-right: auto;
-	width: 200px;
+	/*margin-left: auto;
+	margin-right: auto; */
+	float: left;
 }
  
 #about { 
@@ -256,9 +269,9 @@ body{
 .portfolio{
 	/* background: url(../img/gibson.png) 0 0  no-repeat; */
 	background-color: #E9E9E9;
-	height: 400px;
+	height: 500px;
 	position: relative;
-	top: -600px;
+	top: -680px;
 	z-index: 0;
 	width: 900px;
 	margin-left: auto;
@@ -266,31 +279,49 @@ body{
 	padding: 10px;
 }
 
-.portfolio img{
-	width: 280px;
-}
-
-.portfolio table{
-	padding: 5px;
-	margin: 0px;
+.portfolio .title{
+	color: #888;
+	font-size: 20px;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 30px;
 	position: relative;
 	top: -30px;
 }
 
-.portfolio td{
-	padding: 5px;
-	margin: 0px;
+.portfolio ul{
+	width: 700px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	top: -30px;
 }
+
+.portfolio li{
+	width: 150px;
+	height: 150px;
+	float: left;
+	margin-left: 10px;
+	list-style: none;
+	margin-top: 10px;
+}
+
+.portfolio li:hover{
+	opacity: 0.5;
+	transition: 0.5s all ease;
+}
+
 
 #others {
 	width: 100%;
 	background-color: white;
-	height: 600px;
+	height: 700px;
 	z-index: 1;
 	position: relative;
-	box-shadow: 0px 0px 5px #fff;
+	box-shadow: 0px 0px 5px #888;
 	border-top: 1px solid white;
 	text-align: center;
+	
 }
 
 #others h2{
@@ -304,7 +335,7 @@ body{
 	/*background: url(../img/background_texture.jpg) 0 0 repeat;*/
 	background: url(../img/texture1.jpg) 0 0 fixed repeat;
 	background-size: cover;
-	height: 800px;
+	height: 900px;
 	z-index: 0;
 	position: relative;
 }
@@ -314,7 +345,7 @@ body{
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 30px;
+	margin-top: 90px;
 	height: 300px;
 	border: 0px solid grey;
 	padding-left: 50px;
@@ -346,12 +377,73 @@ body{
 	width: 900px;
 	margin-left: auto;
 	margin-right: auto;
-	top: -450px;
+	top: -500px;
 	background-color: #E9E9E9;
-	height: 500px;
+	height: 700px;
 	z-index: 1;
 	position: relative;
 	box-shadow: 0px -2px 5px #888888;
+}
+
+.contact .title{
+	color: #888;
+	font-size: 20px;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.contact .form{
+	position: relative;
+	margin-left: auto;
+	margin-right:auto;
+	width: 600px;
+	font-weight: bold;
+	color: #888;
+}
+
+input[type=text]:focus, input[type=email]:focus, textarea:focus { 
+	border: none;
+	outline: 0;
+	background-color : #AAA;
+	color: white;
+	padding-left: 20px;
+}
+
+input[type=text], input[type=email], textarea{
+	border: none;
+	height: 50px;
+	background-color: #CCC;
+	box-shadow: inset #BBB 1px 1px 1px;
+	width: 100%;
+	margin-top: 10px;
+	color: white;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 18px;
+	font-family: 'Open Sans Condensed', sans-serif;
+ }
+ 
+ textarea {
+	height: 100px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+ }
+ 
+ .button {
+	padding: 10px;
+	color: white;
+	background-color: #888;
+	border: none;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 17px;
+	text-transform: uppercase;
+	cursor: pointer;
+	margin-top: 12px;
+}
+
+.button:hover{
+	background-color: #BBB;
 }
 
 .contact h2{
@@ -362,6 +454,44 @@ body{
 	margin-left: auto;
 	margin-right: auto;
 	top: -110px;
+}
+
+#flashMessage{
+	position : fixed;
+	background-color: #888;
+	width: 400px;
+	padding: 20px;
+	top: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	color: white;
+	height: 30px;
+	font-size: 18px;
+	z-index: 20;
+}
+
+.success_flash {
+	position: fixed;
+	left: 50%;
+	width: 400px;
+	text-align: center;
+	z-index: 100;
+	top: 100px;
+}
+
+.flash_center{
+	height: auto;
+	position: relative;
+	left: -50%;
+	padding-top: 20px;
+	padding: 10px;
+    color: white;
+    border-radius: 10px;
+	font-size: 24px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    // text-transform: uppercase;
+    /*box-shadow: 0 0 3px black; */
+	background: #888;
 }
 
 /* Basic Jquery slider css */

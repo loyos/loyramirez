@@ -18,24 +18,27 @@
 	<div class = 'square_content'>
 		<div class = "big_square">
 			 <div class = 'square'>
-				
+				<br>
+				<?php echo $this->Html->image('shield.png', array('width' => '50px')); ?>
 			 </div>
 			 <br>
+			  Secured Web
+		</div>
+		<div class = "big_square">
+			 <div class = 'square'>
+				<br>
+				<?php echo $this->Html->image('engine.png', array('width' => '50px')); ?>
+			 </div>
+			  <br>
 			 Web Design & Development
 		</div>
 		<div class = "big_square">
 			 <div class = 'square'>
-				
+				<br>
+				<?php echo $this->Html->image('play.png', array('width' => '50px')); ?>
 			 </div>
 			  <br>
-			 Web Applications
-		</div>
-		<div class = "big_square">
-			 <div class = 'square'>
-				
-			 </div>
-			  <br>
-			 Quick Service
+			On Budget, On Time
 		</div>
 	</div>
 </section>
@@ -44,12 +47,10 @@
 	<div class = 'batman out' data-type ='figures' data-speed="4">
 	</div>
 	<div class = 'profile'>
-		Loy Ramírez <br>
-		<span>
-			Web developer, travel addict, music lover.. 
-		</span>
-		<div class = "img">
-			
+		About me <br>
+		<div class = "img">	</div>
+		<div class = "description">
+			Skilled software developer and designer with extensive experience. Dedicated to staying current on industry knowledge and IT information. Knowledgeable of many developer programming languages, frameworks and web relative tools. Bachelor in Computer Science with an IT Specialization
 		</div>
 	</div>
 </section>
@@ -57,30 +58,33 @@
 <section id="about" data-type="background" data-speed="4" class="pages">
 	<div class = "portfolio" data-speed="1.5">
 		<h2> PORTFOLIO</h2>
-		<table>
-			<tr>
-				<td>
-					<?php echo $this->Html->image('back.jpg'); ?>
-				</td>
-				<td>
-					<?php echo $this->Html->image('back.jpg'); ?>
-				</td>
-				<td>
-					<?php echo $this->Html->image('back.jpg'); ?>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<?php echo $this->Html->image('back.jpg'); ?>
-				</td>
-				<td>
-					<?php echo $this->Html->image('back.jpg'); ?>
-				</td>
-				<td>
-					<?php echo $this->Html->image('back.jpg'); ?>
-				</td>
-			</tr>
-		</table>
+		<div class = "title"> Some of the works </div>
+		<ul>
+			<li>
+				<?php echo $this->Html->link($this->Html->image('works/thumbs/1.jpg'), 'javascript:;', array('escape' => false, 'id' => 'open_gallery1')); ?>
+			</li>
+			<li>
+				<?php echo $this->Html->link($this->Html->image('works/thumbs/2.jpg'), 'javascript:;', array('escape' => false, 'id' => 'open_gallery2')); ?>
+			</li>
+			<li>
+				<?php echo $this->Html->link($this->Html->image('works/thumbs/3.jpg'), 'javascript:;', array('escape' => false, 'id' => 'open_gallery3')); ?>
+			</li>
+			<li>
+				<?php echo $this->Html->link($this->Html->image('works/thumbs/4.jpg'), 'javascript:;', array('escape' => false, 'id' => 'open_gallery4')); ?>
+			</li>
+			<li>
+				<?php echo $this->Html->link($this->Html->image('works/thumbs/5.jpg'), 'javascript:;', array('escape' => false, 'id' => 'open_gallery5')); ?>
+			</li>
+			<li>
+				<?php echo $this->Html->link($this->Html->image('works/thumbs/6.jpg'), 'javascript:;', array('escape' => false, 'id' => 'open_gallery6')); ?>
+			</li>
+			<li>
+				<?php echo $this->Html->link($this->Html->image('works/thumbs/7.jpg'), 'javascript:;', array('escape' => false, 'id' => 'open_gallery7')); ?>
+			</li>
+			<li>
+				<?php echo $this->Html->link($this->Html->image('works/thumbs/8.jpg'), 'javascript:;', array('escape' => false, 'id' => 'open_gallery8')); ?>
+			</li>
+		</ul>
 	</div>
 </section>
 
@@ -196,6 +200,52 @@
 <section id="separator" data-type="background" data-speed="4" class="pages">
 	<div class = "contact" data-speed="4">
 		<h2> CONTACT</h2>
+		
+		<div class = "title"> Contact via form below and we will be get in touch with you within 24 hours. </div>
+		
+		<div class = "form">
+		<?php
+	
+			echo $this->Form->create('Contacto');
+			
+			echo 'Your Name:';
+			
+			echo $this->Form->input('name',array(
+				'label' => false
+			));
+			echo '<br>';
+		
+			echo 'Your Email:';
+			echo $this->Form->input('email',array(
+				'label' => false
+			));
+			echo '<br>';	
+			
+			echo 'Subject:';
+			
+			echo $this->Form->input('subject',array(
+				'label' => false
+			));
+			echo '<br>';
+			
+			echo 'Your Message:';
+			
+			echo $this->Form->input('message',array(
+				'label' => false
+			));
+			
+			echo $this->Form->hidden('date_time', array(
+				'value' => date('Y-m-d H:i:s"')
+			));
+			echo '<br>';
+
+			echo $this->Form->submit('Send Message', array('class' => 'button'));
+			echo $this->Form->end;
+		
+	
+
+		?>
+		</div>
 	</div>
 </section>
 
@@ -205,8 +255,72 @@
 -->
 
 <script>
-$(document).ready(function(){
+$(document).ready(function(){  // hover with jquery
 	
+	$( ".menu li" ).hover(
+  function() {
+    $( this ).find('a').css( 'color', 'white' );
+  }, function() {
+	if($( this ).hasClass( "selected" )){
+	}else{
+    $( this ).find('a').css( 'color', '#939393'  );
+	}
+  }
+);
+
+	// initial selected li from menu
+	
+	var $window = $(window);
+	
+	if($window.scrollTop() < 620){
+			$('#menu_home').addClass('selected');
+			$('#menu_home a').css('color', 'white');
+		}else if( $window.scrollTop() > 619 &&  $window.scrollTop() < 1292){
+			$('#menu_about').addClass('selected');
+			$('#menu_about a').css('color', 'white');
+		}else if( $window.scrollTop() > 1292 && $window.scrollTop() < 2100){
+			$('#menu_portfolio').addClass('selected');
+			$('#menu_portfolio a').css('color', 'white');
+		}else if( $window.scrollTop() >  2099 && $window.scrollTop() < 2801){
+			$('#menu_services').addClass('selected');
+			$('#menu_services a').css('color', 'white');
+		}else if( $window.scrollTop() >  2800 ){
+			$('#menu_contact').addClass('selected');
+			$('#menu_contact a').css('color', 'white');
+		}
+	
+	// adding class depending of scroll position
+	var $window = $(window);
+	
+	$(window).scroll(function() {
+		console.debug($window.scrollTop());
+		if($window.scrollTop() < 620){
+			$('.menu li a').css('color', '#939393');
+			$('.menu li, .menu li a').removeClass('selected');
+			$('#menu_home').addClass('selected');
+			$('#menu_home a').css('color', 'white');
+		}else if( $window.scrollTop() > 619 &&  $window.scrollTop() < 1292){
+			$('.menu li a').css('color', '#939393');
+			$('.menu li').removeClass('selected');
+			$('#menu_about').addClass('selected');
+			$('#menu_about a').css('color', 'white');
+		}else if( $window.scrollTop() > 1292 && $window.scrollTop() < 2100){
+			$('.menu li a').css('color', '#939393');
+			$('.menu li').removeClass('selected');
+			$('#menu_portfolio').addClass('selected');
+			$('#menu_portfolio a').css('color', 'white');
+		}else if( $window.scrollTop() >  2099 && $window.scrollTop() < 2801){
+			$('.menu li a').css('color', '#939393');
+			$('.menu li').removeClass('selected');
+			$('#menu_services').addClass('selected');
+			$('#menu_services a').css('color', 'white');
+		}else if( $window.scrollTop() >  2800 ){
+			$('.menu li a').css('color', '#939393');
+			$('.menu li').removeClass('selected');
+			$('#menu_contact').addClass('selected');
+			$('#menu_contact a').css('color', 'white');
+		}
+	});
 	$( ".menu a, .menu li" ).click(function( event ) {
 		event.preventDefault();
 		// alert($(this).data('div'));
@@ -271,7 +385,7 @@ $(document).ready(function(){
 		console.debug('inicial = ' + inicial);
         $(window).scroll(function() {
             var yPos = ($window.scrollTop() / $bgobj.data('speed'));
-			var wachu = (yPos + inicial) + 'px';
+			var wachu = (yPos + inicial - 60) + 'px';
 			var actual = $('.contact').css('top', wachu);
 			// console.debug(wachu);
         }); 
@@ -314,6 +428,201 @@ $(document).ready(function(){
 				automatic : false
 			});
 		});
+			// fancybox portfolio
+			$("#open_gallery1").click(function() {
+				$.fancybox.open([
+					{
+						href : 'img/works/1.jpg',
+						title : 'My title'
+					}, {
+						href : 'img/works/2.jpg',
+						title : '2nd title'
+					}, {
+						href : 'img/works/3.jpg'
+					}, {
+						href : 'img/works/4.jpg'
+					}, {
+						href : 'img/works/5.jpg'
+					},
+				], {
+					helpers : {
+						thumbs : {
+							width: 75,
+							height: 50
+						}
+					}
+				});
+			});
+			
+			$("#open_gallery2").click(function() {
+				$.fancybox.open([
+					{
+						href : 'img/works/1.jpg',
+						title : 'My title'
+					}, {
+						href : 'img/works/2.jpg',
+						title : '2nd title'
+					}, {
+						href : 'img/works/3.jpg'
+					}, {
+						href : 'img/works/4.jpg'
+					}, {
+						href : 'img/works/5.jpg'
+					},
+				], {
+					helpers : {
+						thumbs : {
+							width: 75,
+							height: 50
+						}
+					}
+				});
+			});
+			
+			$("#open_gallery3").click(function() {
+				$.fancybox.open([
+					{
+						href : 'img/works/1.jpg',
+						title : 'My title'
+					}, {
+						href : 'img/works/2.jpg',
+						title : '2nd title'
+					}, {
+						href : 'img/works/3.jpg'
+					}, {
+						href : 'img/works/4.jpg'
+					}, {
+						href : 'img/works/5.jpg'
+					},
+				], {
+					helpers : {
+						thumbs : {
+							width: 75,
+							height: 50
+						}
+					}
+				});
+			});
+			$("#open_gallery4").click(function() {
+				$.fancybox.open([
+					{
+						href : 'img/works/1.jpg',
+						title : 'My title'
+					}, {
+						href : 'img/works/2.jpg',
+						title : '2nd title'
+					}, {
+						href : 'img/works/3.jpg'
+					}, {
+						href : 'img/works/4.jpg'
+					}, {
+						href : 'img/works/5.jpg'
+					},
+				], {
+					helpers : {
+						thumbs : {
+							width: 75,
+							height: 50
+						}
+					}
+				});
+			});
+			$("#open_gallery5").click(function() {
+				$.fancybox.open([
+					{
+						href : 'img/works/1.jpg',
+						title : 'My title'
+					}, {
+						href : 'img/works/2.jpg',
+						title : '2nd title'
+					}, {
+						href : 'img/works/3.jpg'
+					}, {
+						href : 'img/works/4.jpg'
+					}, {
+						href : 'img/works/5.jpg'
+					},
+				], {
+					helpers : {
+						thumbs : {
+							width: 75,
+							height: 50
+						}
+					}
+				});
+			});
+			$("#open_gallery6").click(function() {
+				$.fancybox.open([
+					{
+						href : 'img/works/1.jpg',
+						title : 'My title'
+					}, {
+						href : 'img/works/2.jpg',
+						title : '2nd title'
+					}, {
+						href : 'img/works/3.jpg'
+					}, {
+						href : 'img/works/4.jpg'
+					}, {
+						href : 'img/works/5.jpg'
+					},
+				], {
+					helpers : {
+						thumbs : {
+							width: 75,
+							height: 50
+						}
+					}
+				});
+			});
+			$("#open_gallery7").click(function() {
+				$.fancybox.open([
+					{
+						href : 'img/works/1.jpg',
+						title : 'My title'
+					}, {
+						href : 'img/works/2.jpg',
+						title : '2nd title'
+					}, {
+						href : 'img/works/3.jpg'
+					}, {
+						href : 'img/works/4.jpg'
+					}, {
+						href : 'img/works/5.jpg'
+					},
+				], {
+					helpers : {
+						thumbs : {
+							width: 75,
+							height: 50
+						}
+					}
+				});
+			});
+			$("#open_gallery8").click(function() {
+				$.fancybox.open([
+					{
+						href : 'img/works/1.jpg',
+						title : 'My title'
+					}, {
+						href : 'img/works/2.jpg',
+						title : '2nd title'
+					}, {
+						href : 'img/works/3.jpg'
+					}, {
+						href : 'img/works/4.jpg'
+					}, {
+						href : 'img/works/5.jpg'
+					},
+				], {
+					helpers : {
+						thumbs : {
+							width: 75,
+							height: 50
+						}
+					}
+				});
+			});
 
 });
 

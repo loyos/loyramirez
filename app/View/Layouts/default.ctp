@@ -33,9 +33,11 @@ $cakeDescription = __d('cake_dev', 'Loy Ramirez');
 		echo $this->Html->meta('icon');
 		echo $this->Html->css('style');
 		echo $this->Html->css('bjqs');
+		echo $this->Html->css('jquery.fancybox');
 		// echo $this->Html->css('demo');
 		echo $this->Html->script('jquery-1.11.1.min');
 		echo $this->Html->script('bjqs-1.3');
+		echo $this->Html->script('jquery.fancybox');
 		// echo $this->Html->script('jquery.mousewheel');
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
@@ -63,13 +65,16 @@ $cakeDescription = __d('cake_dev', 'Loy Ramirez');
 			?>
 		</div>
 	</div>
-	<?php echo $this->element('sql_dump'); ?>
+	<?php //echo $this->element('sql_dump'); ?>
 </body>
 </html>
 
 <script>
 
-	
+	$(document).ready(function() {
+		$('.success_flash').delay(2000).fadeOut(2000);
+	 });
+
 	
 	$(function(){	
 
