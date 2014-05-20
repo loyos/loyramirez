@@ -85,6 +85,7 @@
 				<?php echo $this->Html->link($this->Html->image('works/thumbs/8.jpg'), 'javascript:;', array('escape' => false, 'id' => 'open_gallery8')); ?>
 			</li>
 		</ul>
+		<div class = "chiclet"> </div>
 	</div>
 </section>
 
@@ -213,20 +214,17 @@
 			echo $this->Form->input('name',array(
 				'label' => false
 			));
-			echo '<br>';
 		
 			echo 'Your Email:';
 			echo $this->Form->input('email',array(
 				'label' => false
 			));
-			echo '<br>';	
 			
 			echo 'Subject:';
 			
 			echo $this->Form->input('subject',array(
 				'label' => false
 			));
-			echo '<br>';
 			
 			echo 'Your Message:';
 			
@@ -237,7 +235,6 @@
 			echo $this->Form->hidden('date_time', array(
 				'value' => date('Y-m-d H:i:s"')
 			));
-			echo '<br>';
 
 			echo $this->Form->submit('Send Message', array('class' => 'button'));
 			echo $this->Form->end;
