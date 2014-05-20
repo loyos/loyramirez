@@ -1,5 +1,5 @@
-<section id="home" data-type="background" data-speed="2" class="pages">     
-		<div class = "quotes" data-speed="2">
+<section id="home" data-type="background" data-speed="0.9" class="pages">     
+		<div class = "quotes" data-speed="3">
 			<ul class = 'bjqs'>
 				<li>
 					<p>Web Solutions that make running your business easier.</p>
@@ -55,8 +55,8 @@
 	</div>
 </section>
      
-<section id="about" data-type="background" data-speed="4" class="pages">
-	<div class = "portfolio" data-speed="1.5">
+<section id="about" data-type="background" data-speed="0.9" class="pages">
+	<div class = "portfolio" data-speed="3">
 		<h2> PORTFOLIO</h2>
 		<div class = "title"> Some of the works </div>
 		<ul>
@@ -198,8 +198,8 @@
 	</div>
 </section>
 
-<section id="separator" data-type="background" data-speed="4" class="pages">
-	<div class = "contact" data-speed="4">
+<section id="separator" data-type="background" data-speed="0.9" class="pages">
+	<div class = "contact" data-speed="3">
 		<h2> CONTACT</h2>
 		
 		<div class = "title"> Contact via form below and we will be get in touch with you within 24 hours. </div>
