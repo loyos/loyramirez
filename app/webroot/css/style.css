@@ -457,7 +457,8 @@ input[type=text], input[type=email], textarea{
 	padding-right: 2%;
 	font-size: 18px;
 	font-family: 'Open Sans Condensed', sans-serif;
-	padding-bottom: 3%;
+	padding-top: 1%;
+	padding-bottom: 2%;
 	margin-bottom: 3%;
  }
  
