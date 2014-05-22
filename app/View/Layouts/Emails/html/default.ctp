@@ -19,11 +19,13 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
 <html>
 <head>
-	<title><?php echo $title_for_layout; ?></title>
+	<title> LoyRamirez.com </title>
 </head>
 <body>
 	<?php echo $this->fetch('content'); ?>
-
-	<p>This email was sent using the <a href="http://cakephp.org">CakePHP Framework</a></p>
+	<?php echo 'Name: ' . $data['Contacto']['name'] . '<br>'; ?>
+	<?php echo 'Email: ' . $data['Contacto']['email'] . '<br>'; ?>
+	<?php echo 'Subject: ' . $data['Contacto']['subject'] . '<br>'; ?>
+	<?php echo 'Message: ' . $data['Contacto']['message'] . '<br>'; ?>
 </body>
 </html>

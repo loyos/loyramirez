@@ -13,8 +13,11 @@ class IndexController extends AppController {
 			if($saved){
 				$this->Email->from    = 'alguien@ejemplo.com';
 				$this->Email->to      = 'loyenrique1@gmail.com';
-				$this->Email->subject = 'Prueba';
-				$this->Email->send('Hola cuerpo de mensaje!!!');
+				$this->Email->subject = 'LoyRamirez.com';
+				$this->Email->template = 'default';
+				$this->Email->sendAs = 'both';
+				$this->set('data', $this->data);
+				$this->Email->send();
 				echo $this->Session->setFlash('Thank you for contacting, you will receive a response within 24 hours.', 'success');
 			}
 		}
