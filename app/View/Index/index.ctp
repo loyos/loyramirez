@@ -429,18 +429,9 @@ $(document).ready(function(){  // hover with jquery
 			// fancybox portfolio
 			$("#open_gallery1").click(function() {
 				$.fancybox.open([
-					{
-						href : 'img/works/1.jpg',
-						title : 'My title'
-					}, {
-						href : 'img/works/2.jpg',
-						title : '2nd title'
-					}, {
-						href : 'img/works/3.jpg'
-					}, {
-						href : 'img/works/4.jpg'
-					}, {
-						href : 'img/works/5.jpg'
+					{	
+						href : 'img/works/1.jpg?=5',
+						title : ''
 					},
 				], {
 					helpers : {
@@ -455,17 +446,8 @@ $(document).ready(function(){  // hover with jquery
 			$("#open_gallery2").click(function() {
 				$.fancybox.open([
 					{
-						href : 'img/works/1.jpg',
-						title : 'My title'
-					}, {
-						href : 'img/works/2.jpg',
-						title : '2nd title'
-					}, {
-						href : 'img/works/3.jpg'
-					}, {
-						href : 'img/works/4.jpg'
-					}, {
-						href : 'img/works/5.jpg'
+						href : 'img/works/2.jpg?=1',
+						title : ''
 					},
 				], {
 					helpers : {
@@ -480,17 +462,8 @@ $(document).ready(function(){  // hover with jquery
 			$("#open_gallery3").click(function() {
 				$.fancybox.open([
 					{
-						href : 'img/works/1.jpg',
-						title : 'My title'
-					}, {
-						href : 'img/works/2.jpg',
-						title : '2nd title'
-					}, {
-						href : 'img/works/3.jpg'
-					}, {
-						href : 'img/works/4.jpg'
-					}, {
-						href : 'img/works/5.jpg'
+						href : 'img/works/3.jpg?=1',
+						title : '',
 					},
 				], {
 					helpers : {
@@ -504,17 +477,8 @@ $(document).ready(function(){  // hover with jquery
 			$("#open_gallery4").click(function() {
 				$.fancybox.open([
 					{
-						href : 'img/works/1.jpg',
-						title : 'My title'
-					}, {
-						href : 'img/works/2.jpg',
-						title : '2nd title'
-					}, {
-						href : 'img/works/3.jpg'
-					}, {
-						href : 'img/works/4.jpg'
-					}, {
-						href : 'img/works/5.jpg'
+						href : 'img/works/4.jpg?=1',
+						title : ''
 					},
 				], {
 					helpers : {
@@ -528,17 +492,8 @@ $(document).ready(function(){  // hover with jquery
 			$("#open_gallery5").click(function() {
 				$.fancybox.open([
 					{
-						href : 'img/works/1.jpg',
-						title : 'My title'
-					}, {
-						href : 'img/works/2.jpg',
-						title : '2nd title'
-					}, {
-						href : 'img/works/3.jpg'
-					}, {
-						href : 'img/works/4.jpg'
-					}, {
-						href : 'img/works/5.jpg'
+						href : 'img/works/5.jpg?=2',
+						title : ''
 					},
 				], {
 					helpers : {
@@ -552,17 +507,8 @@ $(document).ready(function(){  // hover with jquery
 			$("#open_gallery6").click(function() {
 				$.fancybox.open([
 					{
-						href : 'img/works/1.jpg',
-						title : 'My title'
-					}, {
-						href : 'img/works/2.jpg',
-						title : '2nd title'
-					}, {
-						href : 'img/works/3.jpg'
-					}, {
-						href : 'img/works/4.jpg'
-					}, {
-						href : 'img/works/5.jpg'
+						href : 'img/works/6.jpg',
+						title : ''
 					},
 				], {
 					helpers : {
@@ -576,17 +522,8 @@ $(document).ready(function(){  // hover with jquery
 			$("#open_gallery7").click(function() {
 				$.fancybox.open([
 					{
-						href : 'img/works/1.jpg',
-						title : 'My title'
-					}, {
-						href : 'img/works/2.jpg',
-						title : '2nd title'
-					}, {
-						href : 'img/works/3.jpg'
-					}, {
-						href : 'img/works/4.jpg'
-					}, {
-						href : 'img/works/5.jpg'
+						href : 'img/works/7.jpg',
+						title : ''
 					},
 				], {
 					helpers : {
@@ -600,17 +537,11 @@ $(document).ready(function(){  // hover with jquery
 			$("#open_gallery8").click(function() {
 				$.fancybox.open([
 					{
-						href : 'img/works/1.jpg',
-						title : 'My title'
+						href : 'img/works/8.jpg',
+						title : ''
 					}, {
-						href : 'img/works/2.jpg',
-						title : '2nd title'
-					}, {
-						href : 'img/works/3.jpg'
-					}, {
-						href : 'img/works/4.jpg'
-					}, {
-						href : 'img/works/5.jpg'
+						href : 'img/works/8-1.jpg',
+						title : ''
 					},
 				], {
 					helpers : {
