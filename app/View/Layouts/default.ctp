@@ -45,6 +45,7 @@ $cakeDescription = __d('cake_dev', 'Loy Ramirez');
 	?>
 </head>
 <body>
+	<div class="loader"></div>
 	<div id="container">
 		<div id="header">
 			<?php echo $this->element('logo'); ?>
@@ -70,7 +71,12 @@ $cakeDescription = __d('cake_dev', 'Loy Ramirez');
 </html>
 
 <script>
+	
+	$(window).load(function() {
+		$(".loader").fadeOut("slow");
+	});
 
+	
 	$(document).ready(function() {
 		$('.success_flash').delay(2000).fadeOut(2000);
 	 });
