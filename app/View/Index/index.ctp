@@ -102,7 +102,7 @@
 						Cloud Hosting
 					</div>
 					<div class = "description">
-						<p>With extensive experience in the area of hosting, server loading and website stress testing, i can provide you several hosting options acording to your needs from basic hosting to Amazon Virtual Private Cloud (VPC), the ultimate web hosting solution.</p>
+						<p>With extensive experience in the area of hosting, server loading and website stress testing, I can provide you several hosting options acording to your needs from basic hosting to Amazon Virtual Private Cloud (VPC), the ultimate web hosting solution.</p>
 
 						<p>Amazon Web Services offers a cloud computing solution that provides businesses with a flexible, highly scalable, and extremely cost efficient way to deliver their websites and web applications.</p>
 					</div>
@@ -120,7 +120,7 @@
 					<div class = "description">
 						<p>Your business goals are at the heart of everything. Whatever your application or market need, internet-based solutions can improve your company's sales, reduce your operating costs and improve your company's productivity.</p>
 
-						<p>Once i understand what you need, i will work with you to develop, designs, extranets, intranets, functional prototypes or integrations to other software applications. </p>
+						<p>Once I understand what you need, I will work with you to develop, designs, extranets, intranets, functional prototypes or integrations to other software applications. </p>
 					</div>
 				</div>
 			</li>
@@ -136,9 +136,9 @@
 						Content Management Systems
 					</div>
 					<div class = "description">
-						<p>A content management system (CMS) is a system that allows you to manage the content of your website. With so many content management systems now in the marketplace it can be confusing as to which one to choose. This is where i can help. </p>
+						<p>A content management system (CMS) is a system that allows you to manage the content of your website. With so many content management systems now in the marketplace it can be confusing as to which one to choose. This is where I can help. </p>
 
-						<p>Unlike other web design and development companies, i do not tie myself to a single CMS solution. I'll provide unbiased advice based on what best suits your business requirements.</p>
+						<p>Unlike other web design and development companies, I do not tie myself to a single CMS solution. I'll provide unbiased advice based on what best suits your business requirements.</p>
 					</div>
 				</div>
 				
@@ -201,7 +201,7 @@
 	<div class = "contact" data-speed="3">
 		<h2> CONTACT</h2>
 		
-		<div class = "title"> Contact me via form below and i will get in touch with you within 24 hours. </div>
+		<div class = "title"> Contact me via form below and I will get in touch with you within 24 hours. </div>
 		
 		<div class = "form">
 		<?php
