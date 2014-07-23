@@ -30,7 +30,12 @@ $cakeDescription = __d('cake_dev', 'Loy Ramirez');
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
 	<?php
-		echo $this->Html->meta('icon');
+		// echo $this->Html->meta('icon');
+		echo $this->Html->meta(
+			'favicon.ico',
+			'/favicon.ico',
+			array('type' => 'icon')
+		);
 		echo $this->Html->css('style');
 		echo $this->Html->css('bjqs');
 		echo $this->Html->css('jquery.fancybox');
