@@ -446,7 +446,11 @@ $(document).ready(function(){  // hover with jquery
 			$("#open_gallery2").click(function() {
 				$.fancybox.open([
 					{
-						href : 'img/works/2.jpg?=1',
+						href : 'img/works/2-1.jpg?=1',
+						title : ''
+					},
+					{
+						href : 'img/works/2-2.jpg?=1',
 						title : ''
 					},
 				], {
@@ -463,6 +467,10 @@ $(document).ready(function(){  // hover with jquery
 				$.fancybox.open([
 					{
 						href : 'img/works/3.jpg?=1',
+						title : '',
+					},
+					{
+						href : 'img/works/3-1.jpg?=1',
 						title : '',
 					},
 				], {
