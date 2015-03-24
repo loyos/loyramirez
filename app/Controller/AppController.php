@@ -35,8 +35,8 @@ class AppController extends Controller {
 	    public function beforeFilter() {
 			//$this->Auth->allow('index', 'view', 'detalle','normativas');
 			// $this->Auth->allow('*');
-			debug($this->request->clientIp());
-			die();
+			// debug($this->request->clientIp());
+			// die();
 		}
 
 }
